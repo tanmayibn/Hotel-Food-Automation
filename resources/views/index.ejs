@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,800">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+ 
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .dropbtn {
+          background-color: transparent;
+          color: white;
+          cursor: pointer;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #110f0f;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+          background-color:transparent;
+        }
+        </style>
+
+</head>
+<body>
+ <!--==========================
+    Header
+  ============================-->
+<!-- header section starts -->
+
+    <header id="header">
+        <a href="#" class="logo"><img src="/images/tray.png" alt="">
+           <b style="color: white; font-size: 3rem;">Atithi</b> </a>
+
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#hotel">Hotel</a>
+                    <div class="dropdown-content">
+                    <a href="/manager_register">Hotel Manager</a>
+                    <a href="/staff">Hotel Staff</a>
+                    </div>
+                </li>
+                <li><a href="#developers">Developers</a></li>
+                <li><a href="/u_register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+        
+        <div class="fas fa-hamburger"></div>
+        
+        
+    </header>
+        
+    <!-- header section ends -->
+
+<!--==========================
+    Home
+  ============================-->
+    <!-- home section starts  -->
+
+    <section id="home" class="container-fluid">
+
+        <div class="row min-vh-100 align-items-center">
+            
+            <div class="col-md-8 ml-md-5 text-md-left text-left content" style="align-items: left; justify-content: left;">
+                <h1>food that you can't resist</h1>
+                <h2>enjoy the marvelous taste</h2>
+                <p>Search the hotels and restaurants and order food of your choice...:)</p>
+                <a href="/login"><button>Order now</button></a>
+            </div>
+            
+            <div class="video-container">
+                <video src="images/vid1.mp4" muted autoplay loop class="vid vid1"></video>
+                <video src="images/vid2.mp4" muted autoplay loop class="vid vid2"></video>
+                <video src="images/vid3.mp4" muted autoplay loop class="vid vid3"></video>
+            </div>
+            
+            <div class="controls align-items-center" style="display: flex; align-items: center; justify-content: center;">
+                <div class="dots dot1"></div>
+                <div class="dots dot2"></div>
+                <div class="dots dot3"></div>
+            </div>
+        
+        </div>
+        
+    </section>
+        
+    <!-- home section ends  -->
+
+<!--==========================
+    About
+  ============================-->
+    <!-- about section starts  -->
+
+<section id="about" class="container-fluid">
+    <div class="heading text-center">
+    <h1>About <span>Us</span></h1>
+    <p>We are the company providing services to the users so that they can order food from multiple hotels and restaurants as well as providing services to hotels and restaurants to automate their food ordering operations.</p>
+    </div>
+    <br>
+    <br>
+</section>
+    <!-- about section ends  -->
+
+<!--==========================
+    Hotels
+  ============================-->
+    <!-- Hotel section starts  -->
+
+<section id="hotel" class="container">
+
+    <div class="heading text-center">
+    <h1><span>Hotels</span> and restaurants</h1>
+    </div>
+
+    <div class="row min-vh-100">
+
+        <div class="col-md-6 text-center text-md-left align-self-center content">
+            <p>If you are a hotel/restaurant manager looking for registering your hotel or restaurant on our website, then move on to the signup page and register by submitting the relevant details</p>
+            <br>
+            <a href="/manager_register"><button>Signup for hotels</button></a>
+        </div>
+
+        <div class="col-md-6 image">
+            <img src="images/chef.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Hotels section ends  -->
+<!--==========================
+    Developers
+  ============================-->
+    <!-- developers section starts  -->
+
+    <section id="developers" class="container-fluid">
+        <div class="heading text-center">
+        <h1>Developers <span></span></h1>
+        <p>Made by Harsha Garg, Arjav Jain, Gazal Arora, Ashna, Nikita Maurya</p>
+        </div>
+        <br>
+        <br>
+    </section>
+        <!-- about section ends  -->
+<!-- footer section starts  -->
+
+<section id="footer" class="container-fluid">
+
+    <div class="row align-items-center">
+    
+        <div class="col-md-4 brand">
+        
+            <a href="#" class="logo"><img src="images/tray.png" alt=""></a>
+            
+            <div class="icons">
+                <a href="#" class="fab fa-facebook-square"></a>
+                <a href="#" class="fab fa-twitter-square"></a>
+                <a href="#" class="fab fa-instagram-square"></a>
+                <a href="#" class="fab fa-pinterest-square"></a>
+            </div>
+    
+        </div>
+    
+        <div class="col-md-4 footer-links">
+            <h3>links:</h3>
+            <a href="#home">home</a>
+            <a href="#about">About</a>
+            <a href="#hotel">Hotels</a>
+            <a href="#login">Login</a>
+            <a href="#developers">Developers</a>
+        </div>
+        
+    </div>    
+</section>
+    
+    <!-- footer section ends  -->
+<!-- script part starts  -->
+
+<script>
+
+    $(document).ready(function(){
+    
+        $('.fa-hamburger').click(function(){
+            $(this).toggleClass('fa-times');
+            $('nav').toggleClass('nav-toggle');
+        });
+    
+        $('nav ul li a').click(function(){
+            $('.fa-hamburger').removeClass('fa-times');
+            $('nav').removeClass('nav-toggle');
+        });
+    
+        $('.dot1').click(function(){
+            $('.vid1').css('display','block');
+            $('.vid2').css('display','none');
+            $('.vid3').css('display','none');
+        });
+    
+        $('.dot2').click(function(){
+            $('.vid2').css('display','block');
+            $('.vid1').css('display','none');
+            $('.vid3').css('display','none');
+        });
+    
+        $('.dot3').click(function(){
+            $('.vid3').css('display','block');
+            $('.vid1').css('display','none');
+            $('.vid2').css('display','none');
+        });
+    
+        $(window).on('scroll load',function(){
+            if($(window).scrollTop() > 10){
+                $('#header').addClass('header-active');
+            }else{
+                $('#header').removeClass('header-active');
+            }
+        });
+    
+    });
+    
+    </script>
+    
+</body>
+</html>

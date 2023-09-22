@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+</head>
+
+<body>
+    <!--==========================
+    Header
+  ============================-->
+<!-- header section starts -->
+<%- include('../partials/navbar') %>
+<!-- header section ends -->
+<div>
+<div class="loginlabel"> <h1>CUSTOMER REGISTER</h1> </div>
+<div class="main"> 
+    <form action="" method="post" onsubmit="return confirm('Are you sure you want to submit?')"> 
+        <% if(messages.error){ %>
+        <span style="color: red; font-size: 18px;font-weight: 700;"><%= messages.error %></span>
+        <% }%>
+        <h2 class="labels">Name</h2> 
+        <input class="inputfield" type="text" name="username" required>
+        <h2 class="labels">Email id</h2> 
+        <input class="inputfield" type="email" name="email" required>
+        <h2 class="labels">Password</h2> 
+        <input id = "password" class="inputfield" type="password" name="password" required>
+        <span style = "position: absolute"  class = "eye" onclick = "myfunction()"><i style = "display:none" id = "hide1" class="fa fa-eye"></i><i  id = "hide2" class="fa fa-eye-slash"></i></span>
+        <h2  class="labels">Confirm Password</h2> 
+        <input id = "cpassword" class="inputfield" type="password" name="cPassword" required>
+        <span style = "position: absolute"  class = "eye" onclick = "myfunction1()"><i style = "display:none" id = "hide11" class="fa fa-eye"></i><i  id = "hide22" class="fa fa-eye-slash"></i></span>
+        <a>Already have an account?</a>
+        <input class="button" type="submit" name="customer_signup" value="Signup">        
+    </form>
+</div>
+</div>  
+<script>
+   
+    function myfunction(){
+       var x = document.getElementById("password")
+       var y = document.getElementById("hide1")
+       var z = document.getElementById("hide2")
+
+       if( x.type === 'password'){
+           x.type = "text";
+           y.style.display = "block";
+           z.style.display = "none";
+       }
+
+       else{
+           x.type = "password";
+           y.style.display = "none";
+           z.style.display = "block";
+       }
+    }
+
+    
+</script>
+
+<script>function myfunction1(){
+    var x = document.getElementById("cpassword")
+    var y = document.getElementById("hide11")
+    var z = document.getElementById("hide22")
+
+    if( x.type === 'password'){
+        x.type = "text";
+        y.style.display = "block";
+        z.style.display = "none";
+    }
+
+    else{
+        x.type = "password";
+        y.style.display = "none";
+        z.style.display = "block";
+    }
+ }</script>
+</body>
+</html>

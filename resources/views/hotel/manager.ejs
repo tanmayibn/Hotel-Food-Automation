@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Lobster&display=swap" rel="stylesheet">
+    
+</head>
+
+<!--Sidebar-->
+
+<style>
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  margin-top: 35px;
+  background: #3a2727c4;
+}
+
+#sidebar .nav a{
+  background: none;
+  color: #CFD8DC;
+  font-size: 30px;
+  padding: 30px 5px;
+}
+
+#sidebar .nav a:hover{
+  background: none;
+  color: #ECEFF1;
+}
+
+</style>
+
+<body>
+    <!--==========================
+    Header
+  ============================-->
+<!-- header section starts -->
+<%- include('../partials/manager_nav') %>
+<!-- header section ends -->
+<div id="viewport">
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div style="height:40px"></div>
+      <ul class="nav">
+        <li>
+          <a href="/changePassword">
+            Change Password
+          </a>
+        </li>
+        <li>
+          <a href="/manager/orders">
+            Pending Orders
+          </a>
+        </li>
+        <li>
+          <a href="/menu">
+             Add menu
+          </a>
+        </li>
+        <li>
+          <a href="/staff">
+            Add Staff
+          </a>
+        </li>
+        <li>
+          <a href="/completed_orders">
+             Completed Orders
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Content -->
+    <div id="content">
+      
+    </div>
+  </div>
+
+</body>
+</html>
